@@ -2,6 +2,10 @@ import { useParams } from "react-router-dom";
 import axios from "../api";
 import { useEffect, useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import '../styles/buttons.css';
+import '../styles/card.css';
+
+
 
 export default function ItemPage() {
   const { name } = useParams();

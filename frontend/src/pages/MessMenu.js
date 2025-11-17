@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "../api";
+import '../styles/buttons.css';
+import '../styles/card.css';
+
+
 
 export default function MessMenu() {
   const { name } = useParams();

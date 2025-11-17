@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "../api";
+import '../styles/buttons.css';
+import '../styles/card.css';
+
+
 
 export default function Specials() {
   const [specials, setSpecials] = useState([]);

@@ -6,12 +6,13 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import MessMenu from "./pages/MessMenu";
 import ItemPage from "./pages/ItemPage";
-
-
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />   {/* Navbar must be inside BrowserRouter */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/messes" element={<MessList />} />
@@ -20,8 +21,6 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/mess/:name" element={<MessMenu />} />
         <Route path="/item/:name" element={<ItemPage />} />
-
-
       </Routes>
     </BrowserRouter>
   );

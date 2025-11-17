@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import axios from "../api";
 import { CartContext } from "../context/CartContext";
+import '../styles/buttons.css';
+
 
 export default function Checkout() {
   const { cart } = useContext(CartContext);

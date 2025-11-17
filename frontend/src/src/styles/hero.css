@@ -1,0 +1,28 @@
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+    background-image: url('/your-image.jpg'); /* replace later */
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 62px;
+    line-height: 1.1;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+}
+
+.hero p {
+    color: var(--text-light);
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

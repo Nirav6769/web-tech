@@ -1,0 +1,21 @@
+/* === GLOBAL RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #b43838;
+    --primary-dark: #922d2d;
+    --text-dark: #222;
+    --text-light: #555;
+    --bg: #faf7f5;
+    --radius: 14px;
+    --shadow: 0 4px 14px rgba(0,0,0,0.09);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+}
