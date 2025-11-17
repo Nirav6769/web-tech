@@ -1,0 +1,128 @@
+/* Modern AF UI Overhaul for PESU Canteen App */
+
+:root {
+  --bg: #f4f6f9;
+  --card-bg: #ffffff;
+  --text: #1a1a1a;
+  --subtext: #555;
+  --primary: #4f46e5;
+  --primary-dark: #3730a3;
+  --radius: 14px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  padding: 25px;
+  line-height: 1.5;
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--card-bg);
+  padding: 18px 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: var(--primary-dark);
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* HEADINGS */
+h1, h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+
+/* INPUTS */
+input,
+select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  margin-right: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  width: 240px;
+  background: #fff;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* BUTTON */
+button {
+  padding: 12px 18px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+/* ITEM LIST */
+.item-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.item-sub {
+  color: var(--subtext);
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.price-tag {
+  font-weight: 700;
+  margin-top: 10px;
+  display: block;
+}
